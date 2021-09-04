@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSlider from "react-slick";
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+
 
 //component
 import {NextArrow, PrevArrow} from "./Arrows.component";
@@ -34,11 +34,11 @@ const HeroCarousal = () => {                                //refer documentatio
   };
 
 const images = [
-  "https://images.unsplash.com/photo-1537988489137-33d67a16f3ec?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHRlc2xhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1549822701-09dcb3dd5ef2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fHRlc2xhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1554744512-5a8ef212982d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjF8fHRlc2xhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-  "https://images.unsplash.com/photo-1621871160449-b6f32e4f812e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80",
-  "https://images.unsplash.com/photo-1619845146106-38abf07e9c99?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA4fHx0ZXNsYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+"https://in.bmscdn.com/promotions/cms/creatives/1630390163036_reclaimthesaaz_webshowcase_1240x300.jpg",
+"https://in.bmscdn.com/promotions/cms/creatives/1630432985528_incinemasthisfriday_shangchiandthelegendofthetenrings_webshowcase_1240x300.jpg",
+"https://in.bmscdn.com/promotions/cms/creatives/1630390163036_reclaimthesaaz_webshowcase_1240x300.jpg",
+"https://in.bmscdn.com/promotions/cms/creatives/1630608713679_matrixfightnight6_webshowcase_1240x300.jpg",
+"https://in.bmscdn.com/promotions/cms/creatives/1628591224466_fnbgeneric.jpg"
 ]
 
   return(

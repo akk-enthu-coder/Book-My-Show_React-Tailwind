@@ -1,6 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 
+import {NextArrow, PrevArrow} from "./Arrows3.component";
+
 const EntertainmentCard = (props) => {
   return(
     <>
@@ -34,7 +36,10 @@ const EntertainmentCardSlider = () => {
     autoplay:false,
     slidesToShow:4,
     slidesToScroll:4,
-    InitialSlide:0
+    InitialSlide:0,
+    nextArrow: <NextArrow/>,
+    prevArrow: <PrevArrow/>
+
   }
 
   return (
