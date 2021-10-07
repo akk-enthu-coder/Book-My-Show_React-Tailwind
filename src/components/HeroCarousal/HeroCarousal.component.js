@@ -1,5 +1,6 @@
-import React from "react";
+import React , {useState, useEffect} from "react";
 import HeroSlider from "react-slick";
+import axios from "axios";
 
 
 //component
@@ -10,6 +11,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const HeroCarousal = () => {                                //refer documentation
+
+const [images, setImages] = useState([]);
+
+useEffect(()=> {
+  const requestNowPlayingMovies = async() => {
+    const getImages = await axios.get("/movie/now_playing");
+    setImages(getImages.data.results);
+  };
+  requestNowPlayingMovies();
+}, []);
 
   const settingsLg = {
     arrows: true,
@@ -33,14 +44,6 @@ const HeroCarousal = () => {                                //refer documentatio
     prevArrow: <PrevArrow/>
   };
 
-const images = [
-"https://in.bmscdn.com/promotions/cms/creatives/1630390163036_reclaimthesaaz_webshowcase_1240x300.jpg",
-"https://in.bmscdn.com/promotions/cms/creatives/1630432985528_incinemasthisfriday_shangchiandthelegendofthetenrings_webshowcase_1240x300.jpg",
-"https://in.bmscdn.com/promotions/cms/creatives/1630390163036_reclaimthesaaz_webshowcase_1240x300.jpg",
-"https://in.bmscdn.com/promotions/cms/creatives/1630608713679_matrixfightnight6_webshowcase_1240x300.jpg",
-"https://in.bmscdn.com/promotions/cms/creatives/1628591224466_fnbgeneric.jpg"
-]
-
   return(
     <>
   <div className="lg:hidden">
@@ -48,7 +51,8 @@ const images = [
   {
     images.map((image) => (
       <div className="w-full h-64 md:h-80 py-3">
-      <img src ={image} alt="testing" className="w-full h-full rounded-md"/>
+      <img src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`}
+      alt="testing" className="w-full h-full rounded-md"/>
       </div>
     ))
   }
@@ -61,7 +65,8 @@ const images = [
   {
     images.map((image) => (
       <div className="w-full h-96 px-2 py-3">
-      <img src ={image} alt="testing" className="w-full h-full rounded-md"/>
+      <img src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`}
+      alt="testing" className="w-full h-full rounded-md"/>
       </div>
     ))
   }

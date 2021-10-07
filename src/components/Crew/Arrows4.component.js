@@ -1,0 +1,33 @@
+import React from "react";
+import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
+
+
+
+export const NextArrow = (props) => {
+  //const {className , style, onClick} = props; we require this props so instead of mentioning we can spread it (done below)
+  return (
+    <>
+    <div
+    className = ""
+    style = {{...props.style, fontSize:"50px", display:"block", opacity: "0.6", top: "30px" , right:"-20px" ,height:"40px", width:"40px" ,borderRadius:"4px", position:"absolute"}}   //spread because many styles are there
+    onClick = {props.onClick}
+     >
+     <span><IoIosArrowDroprightCircle/></span>
+     </div>
+    </>
+  );
+};
+
+export const PrevArrow = (props) => {
+  return (
+    <>
+    <div
+    className = ""
+    style = {{...props.style, fontSize:"50px", display:"block", opacity: "0.6", top: "30px" , left:"-25px" ,height:"40px", width:"40px" ,borderRadius:"4px", position:"absolute", zIndex:"15"}}
+    onClick = {props.onClick}
+     >
+     <span><IoIosArrowDropleftCircle/></span>
+     </div>
+    </>
+  );
+};

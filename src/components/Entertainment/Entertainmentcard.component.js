@@ -39,7 +39,6 @@ const EntertainmentCardSlider = () => {
     InitialSlide:0,
     nextArrow: <NextArrow/>,
     prevArrow: <PrevArrow/>
-
   }
 
   return (
