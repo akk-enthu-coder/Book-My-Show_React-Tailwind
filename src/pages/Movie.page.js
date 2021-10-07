@@ -6,7 +6,7 @@ import {BiCameraMovie} from "react-icons/bi";
 
 const launchRazorPay = () => {
   let options = {
-    key:"rzp_test_GdyP0P63lilcbx",
+    key:" YOUR KEY ",
     amount: 500*100,
     currency: "INR",
     name: "Book My show Clone",
