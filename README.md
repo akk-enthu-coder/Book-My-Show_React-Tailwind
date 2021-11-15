@@ -29,7 +29,9 @@ using REACT and TAILWIND
 <img width="1440" alt="Screenshot 2021-10-19 at 9 53 48 PM" src="https://user-images.githubusercontent.com/83231203/141718650-f5d99e98-76a5-4153-9918-36db87f45c01.png">
 <img width="1440" alt="Screenshot 2021-10-19 at 9 54 19 PM" src="https://use
 <img width="1440" alt="Screenshot 2021-10-19 at 9 56 14 PM" src="https://user-images.githubusercontent.com/83231203/141718674-5ff75e3a-4547-4e5f-bac7-a98fcc7d611c.png">
-r-images.githubusercontent.com/83231203/141718626-0682a233-3ade-4e48-b489-2acebad5ea16.png">
+
+<img width="1440" alt="Screenshot 2021-10-19 at 9 54 19 PM" src="https://user-images.githubusercontent.com/83231203/141718900-e5e32785-0772-471f-9cbe-7f61f25a1d73.png">
+
 
 
 
